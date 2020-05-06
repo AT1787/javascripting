@@ -22,6 +22,12 @@ const setupInput = function(conn) {
       connection.write('Move: left')
     } else if (key === 'd') {
       connection.write('Move: right')
+    } else if (key === 'q') {
+      connection.write(`Say: BEWARE. I AM ANDREW'S SNAKE. I EAT STUFF`)
+    } else if (key === 'z') {
+      connection.write(`Say: MY SNAKE WILL EAT YOU`)
+    } else if (key === 'e') {
+      connection.write('Say: HONESTLY. JUST GIVE UP')
     }
   });
   }
